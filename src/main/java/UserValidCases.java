@@ -5,7 +5,7 @@ public class UserValidCases
 {
     public boolean getRegFirstName(String input)
     {
-        Pattern pattern=Pattern.compile("^[A-Z][a-zA-Z ]{2,}$");
+        Pattern pattern=Pattern.compile("^[A-Z][a-z ]{2,}$");
         Matcher matcher=pattern.matcher(input);
 
         return matcher.matches();
